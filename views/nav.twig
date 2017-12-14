@@ -1,0 +1,8 @@
+<nav class="navbar navbar-default navbar-fixed-side">
+    <ul class="nav">
+        <li><a href="{{ url('home') }}">Home</a></li>
+        <li><a href="{{ url('info') }}">{{ 'infotitle' | trans }}</a></li>
+        <li><a href="{{ url(loginlogouturl) }}">{{ loginlogoutlabel }}</a></li>
+    </ul>
+    <small>{{ 'rendered' | trans({'%date%':"now"|date("Y-m-d H:i:s")}) }}</small>
+</nav>

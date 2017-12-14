@@ -1,0 +1,8 @@
+{% extends "base.twig" %}
+{% block title %}{{ 'infotitle' | trans }}{% endblock %}
+{% block content %}
+    <div class="page-header">
+        <h1>{{ 'infotitle' | trans }} <small>{{ 'rendered' | trans({'%date%':"now"|date("Y-m-d H:i:s")}) }}</small></h1>
+    </div>
+    <p>{{ 'infocontent' | trans }}</p>
+{% endblock %}
